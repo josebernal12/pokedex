@@ -11,10 +11,12 @@ import { CommonModule } from '@angular/common';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import { ListComponent } from './pages/list/list.component';
 @NgModule({
   declarations: [
     AppComponent,
     TypesComponent,
+    ListComponent,
     
   ],
   imports: [

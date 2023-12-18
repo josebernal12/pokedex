@@ -15,7 +15,6 @@ export class TypesComponent implements OnInit {
     this.apiService.getAllTypes().subscribe({
       next: (value: ITypes) => {
         this.types = value.results
-        console.log(this.types)
       },
       error: () => { }
     })
