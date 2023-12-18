@@ -1,0 +1,17 @@
+<!-- {{ pokemon.moves| json }} -->
+<mat-card class="example-card">
+  <mat-card-header>
+    <mat-card-title>{{this.name}}</mat-card-title>
+  </mat-card-header>
+  <p>Weight: {{this.pokemon.weight}}</p>
+  <p *ngFor="let type of pokemon.types">Type  {{type.type.name}}</p>
+  <mat-card-content *ngFor="let move of pokemon.moves">
+    <p>Moves: {{move.move.name}}</p>
+      <mat-divider></mat-divider>
+    
+  </mat-card-content> 
+  <mat-card-footer>
+    <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+  </mat-card-footer>
+</mat-card>
+

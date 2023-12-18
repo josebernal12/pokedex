@@ -20,7 +20,7 @@ export class ListComponent implements OnInit {
 
     this.apiService.getType(this.name).subscribe({
       next: (value: Types) => {
-        this.type = value.pokemon
+        this.type = value.pokemon.sort((a, b) => (a.pokemon.name > b.pokemon.name) ? 1 : -1);
       },
       error:() => {
       },

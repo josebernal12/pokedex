@@ -12,11 +12,17 @@ import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { ListComponent } from './pages/list/list.component';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
+import {MatButtonModule} from '@angular/material/button';
+import {MatDividerModule} from '@angular/material/divider';
+import {MatCardModule} from '@angular/material/card';
+import { PokemonComponent } from './pages/pokemon/pokemon.component';
 @NgModule({
   declarations: [
     AppComponent,
     TypesComponent,
     ListComponent,
+    PokemonComponent,
     
   ],
   imports: [
@@ -28,6 +34,10 @@ import { ListComponent } from './pages/list/list.component';
     MatAutocompleteModule,
     MatInputModule,
     MatFormFieldModule,
+    MatCardModule,
+    MatDividerModule,
+    MatButtonModule,
+    MatProgressBarModule,
     CommonModule
 
   ],
