@@ -1,6 +1,6 @@
   <mat-grid-list cols="5" >
     <mat-grid-tile *ngFor="let type of types">
-      <a [routerLink]="['/types', type.name]" >
+      <a class="link" [routerLink]="['/types', type.name]" >
         {{type.name}}
       </a>
     </mat-grid-tile>
